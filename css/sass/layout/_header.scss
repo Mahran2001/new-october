@@ -1,0 +1,116 @@
+@use "../helpers/variables" as *;
+
+nav {
+  // background-color: $main-color-red;
+  .navbar-nav {
+    .nav-item {
+      #sign-in {
+        &::before {
+          content: "";
+          height: 50%;
+          width: 1px;
+          position: absolute;
+          left: 0;
+          top: 50%;
+          transform: translateY(-50%);
+          -webkit-transform: translateY(-50%);
+          -moz-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          -o-transform: translateY(-50%);
+        }
+      }
+      .nav-link {
+        // color: $Pure-White;
+        transition: 3s;
+        -webkit-transition: 0.3s;
+        -moz-transition: 3s;
+        -ms-transition: 3s;
+        -o-transition: 3s;
+
+        &.active {
+          &::before {
+            content: "";
+            position: absolute;
+            width: calc(100% - 2rem);
+            height: 3%;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            -webkit-transform: translateX(-50%);
+            -moz-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+            -o-transform: translateX(-50%);
+            @media (max-width: $lg) {
+              display: none;
+            }
+          }
+        }
+        &:hover:not(#sign-in) {
+          transform: translateY(-15px);
+          -webkit-transform: translateY(-15px);
+          -moz-transform: translateY(-15px);
+          -ms-transform: translateY(-15px);
+          -o-transform: translateY(-15px);
+          @media (max-width: $lg) {
+            transform: translatex(15px);
+            -webkit-transform: translatex(15px);
+            -moz-transform: translatex(15px);
+            -ms-transform: translatex(15px);
+            -o-transform: translatex(15px);
+          }
+        }
+      }
+    }
+  }
+  .navbar-toggler {
+    &:focus {
+      box-shadow: none;
+    }
+  }
+}
+.nav-about {
+  background-color: $Pure-White;
+  // background-color: $main-color-red;
+  .navbar-nav {
+    .nav-item {
+      #sign-in {
+        &::before {
+          content: "";
+          background-color: $Heading-and-title-color;
+        }
+      }
+      .nav-link {
+        &.active {
+          &::before {
+            content: "";
+
+            background-color: $Pure-Black;
+          }
+        }
+        &:hover:not(#sign-in) {
+          color: $Pure-Black;
+        }
+      }
+    }
+  }
+}
+.nav-home {
+  background-color: $main-color-red;
+  // background-color: $main-color-red;
+  .navbar-nav {
+    .nav-item {
+      .nav-link {
+        &.active {
+          &::before {
+            content: "";
+
+            background-color: $Pure-White;
+          }
+        }
+        &:hover:not(#sign-in) {
+          color: $Pure-White;
+        }
+      }
+    }
+  }
+}

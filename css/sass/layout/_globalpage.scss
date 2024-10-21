@@ -1,0 +1,22 @@
+@use "../helpers/variables" as *;
+body {
+  font-family: "Karla", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+html::-webkit-scrollbar-thumb {
+  background: $main-color-red;
+  border-radius: 10px;
+}
+html::-webkit-scrollbar {
+  width: 10px;
+}
+ul,ol{
+  padding: 0;
+  list-style: none;
+}

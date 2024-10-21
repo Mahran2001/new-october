@@ -1,0 +1,62 @@
+@use "../helpers/variables" as *;
+
+// start About-Us-Bar
+.About-Us-Bar {
+  background: linear-gradient(to right, #ff9b40, #ff301a);
+  min-height: calc(60vh - 72px);
+  img {
+    top: 0;
+    right: 0;
+  }
+}
+// start About-Us-Bar
+// start frame-2
+.Frame-2 {
+  min-height: 40vh;
+  .container {
+    .row {
+      h2 {
+        color: $Rare-Button-Colors;
+        font-weight: bold;
+      }
+    }
+  }
+}
+// end frame-2
+// start Our Service
+.Our-Service2 {
+  .row {
+    > div {
+      p:nth-of-type(1) {
+        color: $main-color-red;
+      }
+    }
+  }
+}
+// end Our Service
+// start Meet Our Team
+.Meet-Our-Team {
+  #col-1 {
+    box-shadow: 10px 10px 10px #ccc;
+  }
+  .spical {
+    color: $Pure-White;
+    background-color: $Rare-Button-Colors;
+  }
+  .angel-right {
+    &:not(.spical) {
+      color: #3e49f3;
+      background-color: #3e4af330;
+    }
+  }
+}
+// end Meet Our Team
+
+// start Team-Joning-Bar
+.Team-Joning-Bar {
+  .container {
+    background: linear-gradient(to right, #ff9b40, #ff301a);
+
+  }
+}
+//  end Team-Joning-Bar

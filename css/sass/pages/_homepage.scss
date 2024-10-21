@@ -1,0 +1,37 @@
+@use "../helpers/variables" as *;
+// start landing
+.landing {
+  background-color: $main-color-red;
+  min-height: calc(100vh - 72px);
+}
+// end landing
+// start Introduction
+.Introduction {
+  #link {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      height: 2px;
+      background-color: $Rare-Button-Colors;
+    }
+  }
+}
+// end Introduction
+// start Our-Service
+.Our-Service {
+  background-color: $Rare-Bg-Color;
+}
+// end Our-Service
+// start How-it-works
+.How-it-works {
+  background-color: $Rare-Bg-Color;
+}
+// end How-it-works
+// start Testimonial
+.Testimonial {
+  background-color: $Rare-Button-Colors;
+}
+// end Testimonial
